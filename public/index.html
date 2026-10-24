@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Stack Blog Application</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Adding Google Font for a premium look -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Decorative background circles -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+
+    <nav>
+        <h1>📝 TechBlog <span class="badge">Group 43</span></h1>
+    </nav>
+
+    <main>
+        <section class="create-post glass-panel">
+            <h2>Create a New Post</h2>
+            <input type="text" id="title" placeholder="Enter a catchy title..." required>
+            <input type="text" id="author" placeholder="Your Name" required>
+            <textarea id="content" placeholder="Write your amazing content here..." rows="5" required></textarea>
+            <button onclick="createPost()">Publish Post 🚀</button>
+        </section>
+
+        <section id="posts-container">
+            <h2>Recent Posts</h2>
+            <div id="posts-list">
+                <!-- Posts will appear here -->
+                <p class="loading-text">Loading posts...</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
